@@ -1,0 +1,165 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&family=Poppins:wght@400;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(229, 235, 251, 0.8);
+    border: 2px solid rgba(72, 165, 211, 0.6);
+    box-shadow: 6px 7px 15px 0px rgba(8, 47, 66, 0.4);
+    padding: 1.3rem;
+    margin: 1em;
+    border-radius: 8px;
+}
+
+.container h1 {
+    font-size: 2.5rem;
+}
+
+.score__container {
+    width: 100%;
+    border-bottom: 1px solid rgba(0, 0, 0, .2);
+}
+
+.score__container h2 {
+    margin-top: .8em;
+    font-size: 2rem;
+    font-family: 'Nerko One', sans-serif;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.score__points {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    padding: 0 2em;
+    border-top: 1px solid rgba(0, 0, 0, .2);
+}
+
+.score {
+    text-align: center;
+    margin-bottom: 1em;
+}
+
+.score span {
+    font-size: 3.5rem;
+    font-weight: 600;
+}
+
+.score p {
+    font-family: 'Nerko One', sans-serif;
+    font-size: 1.5em;
+}
+
+.choice__container {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.choice__container p {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.choice {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 6rem;
+    padding: 15px;
+    color: rgba(0, 0, 0, .1)
+}
+
+.options__container {
+    width: 100%;
+    display: flex;
+    margin: 2rem 0;
+    padding: 10px;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    font-size: 3.5em;
+    border: 2px solid black;
+    border-radius: 8px;
+    border: 2px solid rgba(59, 136, 174, 0.6);
+    box-shadow: 5px 5px 16px 0px rgba(8, 47, 66, 0.4);
+}
+
+.options__scissors {
+    transform: rotateY(180deg);
+}
+
+.option {
+    height: 80px;
+    transition: .2s all;
+    cursor: pointer;
+}
+
+.option:hover {
+    color: rgba(46, 229, 49, .8);
+    font-size: 3.6rem;
+}
+
+.container__buttons {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.container__buttons .btn {
+    font-size: 1.3rem;
+    text-transform: uppercase;
+    font-family: 'Nerko One', sans-serif;
+    padding: 10px 15px;
+    border-radius: 5px;
+    border: 2px solid rgba(59, 136, 174, 0.6);
+    box-shadow: 5px 5px 16px 0px rgba(8, 47, 66, 0.4);
+    cursor: pointer;
+    transition: .3s all ease;
+}
+
+.container__buttons .btn:hover {
+    background: rgb(33, 66, 131);
+    color: rgb(216, 216, 216);
+    border: 1px solid #fff;
+}
+
+.container__buttons .btn i {
+    font-size: 1.6rem;
+}
+
+
+
+
+
+
+@media (max-width: 500px) {
+    .container h1 {
+        font-size: 1.6rem;
+    }
+
+    .score__container h2 {
+        font-size: 1.4rem;
+    }
+}
