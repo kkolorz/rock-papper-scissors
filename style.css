@@ -88,7 +88,7 @@ body {
     align-items: center;
     font-size: 6rem;
     padding: 15px;
-    color: rgba(0, 0, 0, .1)
+    color: rgba(0, 0, 0, .1);
 }
 
 .options__container {
@@ -106,8 +106,8 @@ body {
     box-shadow: 5px 5px 16px 0px rgba(8, 47, 66, 0.4);
 }
 
-.options__scissors {
-    transform: rotateY(180deg);
+.options__container:last-child {
+    transform: rotateX(180deg);
 }
 
 .option {
@@ -123,6 +123,7 @@ body {
 
 .container__buttons {
     width: 100%;
+    height: 50px;
     display: flex;
     justify-content: space-around;
 }
